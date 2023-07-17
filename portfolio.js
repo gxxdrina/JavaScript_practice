@@ -1,7 +1,7 @@
 // let hello = "Hi there I'm Rina";
 // alert(hello);
 
-// varによる再宣言はOK
+// varによる再宣言はOK verはあまり使用しない
 var nickname = "taro"
 console.log(nickname)
 var nickname = "ichiro"
