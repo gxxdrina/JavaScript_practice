@@ -1,34 +1,15 @@
-// let hello = "Hi there I'm Rina";
-// alert(hello);
-
-// varによる再宣言はOK verはあまり使用しない
-var nickname = "taro"
-console.log(nickname)
-var nickname = "ichiro"
-console.log(nickname)
-
-// varとletは再代入OK
-let name = "taro"
-console.log(name)
-name = "jiro"
-console.log(name)
-
-// 0~9までをループによってコンソールに出力
-for (let i = 0; i < 10; i++) {
-  console.log(i);
-}
-
-//新たに値を代入する必要のないものに関してはconstで宣言
-
-
-//
-var str = "webcamp"
-
-function foo() { 
-  console.log(str)
-  var str = "dmm webcamp"
-  console.log(str)
-}
-
-foo()
-
+const swiper = new Swiper('.swiper', {
+  //オプションの設定
+  loop: true, //最後までスライドしたら最初の画像に戻る
+ 
+  //ページネーション表示の設定
+  pagination: { 
+    el: '.swiper-pagination', //ページネーションの要素
+  },
+ 
+  //ナビゲーションボタン（矢印）表示の設定
+  navigation: { 
+    nextEl: '.swiper-button-next', //「次へボタン」要素の指定
+    prevEl: '.swiper-button-prev', //「前へボタン」要素の指定
+  }
+});
