@@ -1,3 +1,5 @@
+/* global $*/
+
 //  天気ボタン
 // （API_KEY には、"取得したAPIキー" を記述）
 const API_KEY = "baa833ddcf328b938deada18096b0212";

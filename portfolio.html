@@ -119,7 +119,20 @@
     </footer>
     
     <!--script.jsをindex.htmlの</body>の前で読み込み-->
+    <script src="Tabbar-Lesson/jquery.min.js"></script>
     <script src="portfolio.js"></script>
-    
+    <script src="script.js"></script>
   </body>
 </html>
+
+
+  # ## ステータスが退会のユーザーはログイン不可
+  # def active_for_authentication?
+  #   super || !user_status? #ユーザーがログインするためには、user_status?がfalse（有効）であることも必要
+  # end
+  
+  # ## 退会後のエラーメッセージの制御
+  # def inactive_message
+  #   user_status? ? super : :account_inactive #user_status?がtrueの時はdevise
+  # end
+
